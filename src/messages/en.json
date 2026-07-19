@@ -1,0 +1,163 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "hello": "HELLO I'M",
+    "name": "ZAID MARIAM",
+    "title1": "Full Stack Web Developer",
+    "title2": "Frontend Developer",
+    "title3": "Backend Developer",
+    "description": "I build modern, scalable, and high-performance web applications using React, Laravel, and MySQL. I focus on clean architecture, responsive design, and creating exceptional user experiences.",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV"
+  },
+  "About": {
+    "badge": "About Me",
+    "titlePart1": "Turning Ideas Into ",
+    "titlePart2": "Digital Experiences",
+    "description": "I'm Zaid Mariam, a Full Stack Web Developer from Tiznit, Morocco. I studied Digital Development – Full Stack Web at OFPPT. I enjoy building modern, scalable, and high-performance web applications that combine elegant UI, clean architecture, and exceptional user experiences. I'm passionate about learning new technologies, solving complex problems, and transforming ideas into digital products that people love.",
+    "stats": {
+      "projects": "Projects Completed",
+      "tech": "Technologies Mastered",
+      "passion": "Motivation",
+      "study": "Years of Study"
+    },
+    "card": {
+      "fullStack": "Full Stack Dev",
+      "cleanCode": "Clean Code",
+      "fastLearner": "Fast Learner",
+      "problemSolver": "Problem Solver",
+      "nameValue": "Zaid Mariam",
+      "roleValue": "Full Stack Developer",
+      "locationValue": "",
+      "educationValue": "OFPPT",
+      "mindsetValue": "Always Learning 🚀"
+    },
+    "journey": {
+      "title": "My Journey",
+      "subtitle": "Chronological milestones from learning to real-world products",
+      "milestones": {
+        "m1": {
+          "year": "2024 - 2025",
+          "title": "Started My Programming Journey",
+          "desc": "Began learning the fundamentals of web development and built my first projects using HTML, CSS, JavaScript, PHP, and MySQL. This period helped me develop strong problem-solving skills and a solid understanding of modern web development."
+        },
+        "m2": {
+          "year": "2025 - 2026",
+          "title": "Specialized in Full Stack Web Development",
+          "desc": "Enrolled in the Full Stack Web Development program at OFPPT, where I started building modern, scalable web applications using React, Next.js, Laravel, Tailwind CSS, and other modern technologies."
+        },
+        "m3": {
+          "year": "2026",
+          "title": "Final Year Project – E-Commerce Platform",
+          "desc": "Designed and developed a complete e-commerce platform as my graduation project, featuring user authentication, product management, shopping cart, order processing, and an admin dashboard using a modern full-stack architecture."
+        },
+        "m4": {
+          "year": "Present",
+          "title": "Building Real-World Projects",
+          "desc": "Continuously developing modern full-stack web applications, improving my expertise with React, Next.js, Laravel, and exploring new technologies through personal and real-world projects."
+        }
+      }
+    }
+  },
+  "Skills": {
+    "badge": "Full Stack Technologies",
+    "titlePart1": "My Tech ",
+    "titlePart2": "Stack",
+    "description": "A carefully selected ecosystem of modern technologies I use to build fast, scalable and elegant web applications.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "layer": "UI Development",
+        "description": "Creating responsive, accessible, and high-performance user interfaces with modern web standards."
+      },
+      "backend": {
+        "title": "Backend",
+        "layer": "Server Side",
+        "description": "Building secure, modular APIs and scalable, performant server architecture and services."
+      },
+      "database": {
+        "title": "Database",
+        "layer": "Data Layer",
+        "description": "Designing structured schema patterns and managing secure databases optimized for speed."
+      },
+      "tools": {
+        "title": "Tools",
+        "layer": "Development",
+        "description": "Ecosystem tools, version control systems, and workflows that accelerate shipping clean software."
+      }
+    },
+    "active": "Active",
+    "technologies": "Technologies"
+  },
+  "Projects": {
+    "badge": "Selected Work",
+    "titlePart1": "Featured ",
+    "titlePart2": "Projects",
+    "description": "A curated portfolio of high-end SaaS applications, developer tooling, and decentralized web products I have built from design to implementation.",
+    "liveDemo": "Live Demo",
+    "github": "View Source Code",
+    "items": {
+      "codelyx": {
+  "title": "CodeLyx Digital Solutions",
+  "category": "Full-Stack Web Development & Digital Services",
+  "description": "A modern showcase platform for CodeLyx, featuring professional web development services, custom digital solutions, responsive design, interactive sections, and a premium user experience to present expertise and attract clients.",
+  "status": "Production Ready",
+  "type": "Service Showcase Website"
+},
+      "cosmea": {
+      "title": "Cosméa E-Commerce Platform",
+      "category": "E-Commerce & Web Development",
+      "description": "A full-stack e-commerce platform for cosmetic products featuring secure authentication, product search, shopping cart, customer reviews, order management, and a comprehensive admin dashboard with CRUD operations.",
+      "status": "Production Ready",
+      "type": "E-Commerce Platform"
+    }
+    }
+  },
+  "Contact": {
+    "badge": "Contact",
+    "titlePart1": "Let's Build Something ",
+    "titlePart2": "Amazing Together",
+    "description": "Have a project idea, freelance opportunity, or just want to say hello? I'm always open to discussing new ideas and building modern web experiences together.",
+    "infoTitle": "Contact Information",
+    "infoEmail": "Email",
+    "infoPhone": "Phone",
+    "infoLocation": "",
+    "labelName": "Your Name",
+    "labelEmail": "Email Address",
+    "labelSubject": "Subject",
+    "labelMessage": "Write your message...",
+    "btnSend": "Send Message",
+    "btnSending": "Sending...",
+    "successAlert": "Message sent successfully.",
+    "successText": "Thank you! I'll get back to you soon.",
+    "errorAlert": "Failed to send message.",
+    "errorText": "Please try again later.",
+    "msgTransmitted": "Message Transmitted",
+    "msgReceived": "Thank you. Your message has been received. I'll get back to you shortly.",
+    "btnAnother": "Send another message",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please use a valid email",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
+    }
+  },
+  "Footer": {
+    "brand": "ZAID MARIAM",
+    "role": "Full Stack Developer",
+    "description": "I build modern, scalable and high-performance web applications focused on exceptional user experiences.",
+    "location": "",
+    "linksTitle": "Quick Links",
+    "connectTitle": "Let's Connect",
+    "copyright": "© 2026 Zaid Mariam. All rights reserved.",
+    "credits": "",
+    "backToTop": "Back To Top"
+  }
+}

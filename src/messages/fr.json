@@ -1,0 +1,163 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "hello": "BONJOUR, JE SUIS",
+    "name": "ZAID MARIAM",
+    "title1": "Développeuse Web Full Stack",
+    "title2": "Développeuse Frontend",
+    "title3": "Développeuse Backend",
+    "description": "Je développe des applications web modernes, évolutives et performantes en utilisant React, Laravel et MySQL. Je mets l'accent sur une architecture propre, un design responsive et la création d'expériences utilisateur exceptionnelles.",
+    "viewProjects": "Voir les Projets",
+    "downloadCv": "Télécharger mon CV"
+  },
+  "About": {
+    "badge": "À Propos de Moi",
+    "titlePart1": "Transformer des Idées en ",
+    "titlePart2": "Expériences Numériques",
+    "description": "Je m'appelle Zaid Mariam, je suis développeuse web Full Stack basé à Tiznit, au Maroc. J'ai étudiée le développement digital option Full Stack à l'OFPPT. J'aime concevoir des applications web modernes, performantes et évolutives qui combinent une interface élégante, une architecture propre et une expérience utilisateur soignée. Je suis passionnée par l'apprentissage de nouvelles technologies, la résolution de problèmes complexes et la transformation d'idées en produits numériques que les gens adorent.",
+    "stats": {
+      "projects": "Projets Réalisés",
+      "tech": "Technologies Maîtrisées",
+      "passion": "Motivation",
+      "study": "Années d'Études"
+    },
+    "card": {
+      "fullStack": "Dév Full Stack",
+      "cleanCode": "Code Propre",
+      "fastLearner": "Apprentissage Rapide",
+      "problemSolver": "Résolveur de Problèmes",
+      "nameValue": "Zaid Mariam",
+      "roleValue": "Développeuse Full Stack",
+      "locationValue": "",
+      "educationValue": "OFPPT",
+      "mindsetValue": "Toujours en Apprentissage 🚀"
+    },
+    "journey": {
+      "title": "Mon Parcours",
+      "subtitle": "Jalons chronologiques de mon apprentissage aux produits réels",
+      "milestones": {
+        "m1": {
+          "year": "2024 - 2025",
+          "title": "Début de mon aventure dans la programmation",
+          "desc": "J'ai commencé par apprendre les bases du développement web et conçu mes premiers projets avec HTML, CSS, JavaScript, PHP et MySQL. Cette période m'a permis d'acquérir de solides compétences en résolution de problèmes et une bonne compréhension du web moderne."
+        },
+        "m2": {
+          "year": "2025 - 2026",
+          "title": "Spécialisation en Développement Web Full Stack",
+          "desc": "J'ai rejoint la filière Développement Digital (Full Stack) à l'OFPPT, où j'ai commencé à développer des applications web modernes et évolutives en utilisant React, Next.js, Laravel, Tailwind CSS et d'autres technologies de pointe."
+        },
+        "m3": {
+          "year": "2026",
+          "title": "Projet de Fin d'Études – Plateforme E-Commerce",
+          "desc": "Conception et développement d'une plateforme e-commerce complète comme projet de fin d'études, intégrant l'authentification des utilisateurs, la gestion des produits, le panier d'achat, le traitement des commandes et un tableau de bord d'administration avec une architecture full-stack moderne."
+        },
+        "m4": {
+          "year": "Présent",
+          "title": "Développement de Projets Réels",
+          "desc": "Développement continu d'applications web full-stack modernes, renforcement de mon expertise avec React, Next.js, Laravel et exploration de nouvelles technologies à travers des projets personnels et réels."
+        }
+      }
+    }
+  },
+  "Skills": {
+    "badge": "Technologies Full Stack",
+    "titlePart1": "Mon Stack ",
+    "titlePart2": "Technique",
+    "description": "Un écosystème sélectionné avec soin de technologies modernes que j'utilise pour concevoir des applications web rapides, évolutives et élégantes.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "layer": "Développement UI",
+        "description": "Création d'interfaces utilisateur réactives, accessibles et performantes avec les standards web modernes."
+      },
+      "backend": {
+        "title": "Backend",
+        "layer": "Côté Serveur",
+        "description": "Construction d'API sécurisées et modulaires ainsi qu'une architecture serveur performante."
+      },
+      "database": {
+        "title": "Base de Données",
+        "layer": "Couche Données",
+        "description": "Conception de schémas structurés et gestion de bases de données sécurisées et optimisées."
+      },
+      "tools": {
+        "title": "Outils",
+        "layer": "Développement",
+        "description": "Outils d'écosystème, contrôle de version et flux de travail pour accélérer le déploiement."
+      }
+    },
+    "active": "Actif",
+    "technologies": "Technologies"
+  },
+  "Projects": {
+    "badge": "Projets Sélectionnés",
+    "titlePart1": "Projets ",
+    "titlePart2": "Vedettes",
+    "description": "Un portfolio de plateformes SaaS haut de gamme, d'outils pour développeurs et de produits web décentralisés que j'ai conçus et développés de bout en bout.",
+    "liveDemo": "Démo Live",
+    "github": "Voir le code source",
+    "items": {
+      "codelyx": {
+  "title": "CodeLyx Solutions Digitales",
+  "category": "Développement Web Full-Stack & Services Digitaux",
+  "description": "Une plateforme vitrine moderne pour CodeLyx, présentant des services professionnels de développement web, des solutions digitales personnalisées, un design responsive, des sections interactives et une expérience utilisateur premium pour mettre en avant l’expertise et attirer des clients.",
+  "status": "Prêt pour la production",
+  "type": "Site vitrine de services"
+},
+"cosmea": {
+  "title": "Plateforme E-Commerce Cosméa",
+  "category": "E-Commerce & Développement Web",
+  "description": "Une plateforme e-commerce full-stack dédiée aux produits cosmétiques, intégrant une authentification sécurisée, une recherche de produits, un panier d’achat, des avis clients, une gestion des commandes et un tableau de bord administrateur complet avec des opérations CRUD.",
+  "status": "Prêt pour la production",
+  "type": "Plateforme E-Commerce"
+}
+}
+  },
+  "Contact": {
+    "badge": "Contact",
+    "titlePart1": "Bâtissons Quelque Chose d' ",
+    "titlePart2": "Exceptionnel Ensemble",
+    "description": "Vous avez une idée de projet, une opportunité de freelance, ou vous voulez simplement dire bonjour ? Je suis toujours ouvert à discuter de nouvelles idées et à développer des expériences web modernes ensemble.",
+    "infoTitle": "Informations de Contact",
+    "infoEmail": "E-mail",
+    "infoPhone": "Téléphone",
+    "infoLocation": "Localisation",
+    "labelName": "Votre Nom",
+    "labelEmail": "Adresse E-mail",
+    "labelSubject": "Sujet",
+    "labelMessage": "Rédigez votre message...",
+    "btnSend": "Envoyer le Message",
+    "btnSending": "Envoi en cours...",
+    "successAlert": "Message envoyé avec succès.",
+    "successText": "Merci ! Je reviendrai vers vous rapidement.",
+    "errorAlert": "Échec de l'envoi du message.",
+    "errorText": "Veuillez réessayer plus tard.",
+    "msgTransmitted": "Message Transmis",
+    "msgReceived": "Merci. Votre message a bien été reçu. Je vous recontacterai rapidement.",
+    "btnAnother": "Envoyer un autre message",
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'e-mail est requis",
+      "emailInvalid": "Veuillez utiliser un e-mail valide",
+      "subjectRequired": "Le sujet est requis",
+      "messageRequired": "Le message est requis"
+    }
+  },
+  "Footer": {
+    "brand": "ZAID MARIAM",
+    "role": "Développeuse Full Stack",
+    "description": "Je conçois des applications web modernes, performantes et évolutives centrées sur des expériences utilisateur exceptionnelles.",
+    "location": "",
+    "linksTitle": "Liens Rapides",
+    "connectTitle": "Réseaux Sociaux",
+    "copyright": "© 2026 Zaid Mariam. Tous droits réservés.",
+    "credits": "",
+    "backToTop": "Retour en Haut"
+  }
+}
