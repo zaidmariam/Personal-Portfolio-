@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Loader() {
+    const t = useTranslations("Loader");
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const glowsRef = useRef<HTMLDivElement>(null);
@@ -326,7 +328,7 @@ export default function Loader() {
           variants={titleContainerVariants}
           initial="hidden"
           animate="visible"
-          className="sweep-text text-5xl md:text-7xl font-bold tracking-[0.3em] uppercase pl-[0.3em]"
+          className="sweep-text text-3xl sm:text-5xl md:text-7xl font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase pl-[0.2em] sm:pl-[0.3em]"
         >
           {nameLetters.map((letter, idx) => (
             <motion.span
@@ -359,18 +361,19 @@ export default function Loader() {
         />
 
         {/* Subtitle Text (Fades In post-name) */}
-        <motion.p
-          initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{
-            delay: 1.4,
-            duration: 0.9,
-            ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
-          }}
-          className="text-[10px] md:text-[11px] font-normal uppercase tracking-[0.45em] text-[#9ca3af] pl-[0.45em]"
-        >
-          Full Stack Developer
-        </motion.p>
+       {/* Subtitle Text (Fades In post-name) */}
+<motion.p
+  initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
+  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+  transition={{
+    delay: 1.4,
+    duration: 0.9,
+    ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+  }}
+  className="text-[10px] sm:text-[11px] font-normal uppercase tracking-[0.25em] sm:tracking-[0.45em] text-[#9ca3af] pl-[0.25em] sm:pl-[0.45em]"
+>
+  {t("role")}
+</motion.p>
 
       </div>
     </motion.div>
