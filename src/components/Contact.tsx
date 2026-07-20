@@ -333,7 +333,17 @@ export default function Contact() {
         )}
       </AnimatePresence>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div
+  className="
+  relative
+  z-10
+  w-full
+  max-w-7xl
+  mx-auto
+  px-4
+  sm:px-6
+  "
+>
 
         {/* Badge */}
         <motion.div
@@ -373,11 +383,22 @@ export default function Contact() {
 
         {/* CHANGE: Added items-stretch on desktop to force equal height of cards */}
         {/* Main Grid */}
-        <div className="mt-20 grid lg:grid-cols-2 gap-12 items-stretch">
+        <div
+  className="
+  mt-20
+  grid
+  grid-cols-1
+  lg:grid-cols-2
+  gap-8
+  lg:gap-12
+  items-stretch
+  justify-items-center
+  "
+>
 
           {/* LEFT */}
           {/* CHANGE: Added flex flex-col justify-between to make content stretch nicely */}
-          <TiltCard className="p-8 flex flex-col justify-between">
+          <TiltCard className="w-full max-w-xl mx-auto p-8 flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-8">
                 {t("infoTitle")}
@@ -435,7 +456,7 @@ export default function Contact() {
 
           {/* RIGHT */}
           {/* CHANGE: Added flex flex-col h-full to right card contents */}
-          <TiltCard className="p-8 flex flex-col justify-center">
+          <TiltCard className="w-full max-w-xl mx-auto p-8 flex flex-col justify-center">
             <AnimatePresence mode="wait">
               {!isSubmitted ? (
                 <motion.form
