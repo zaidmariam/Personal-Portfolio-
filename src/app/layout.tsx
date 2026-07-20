@@ -9,9 +9,6 @@ export const metadata: Metadata = {
   title: "Mariam Zaid | Full Stack Developer",
   description:
     "Personal portfolio showcasing my projects, skills, and experience.",
-  icons: {
-    icon: "/profile.png", // أو /favicon.ico
-  },
 };
 
 export default async function RootLayout({
