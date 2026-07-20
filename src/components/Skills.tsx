@@ -198,7 +198,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden bg-neutral-50 dark:bg-[#050505] pt-0 pb-24 md:pt-0 md:pb-32 transition-colors duration-300"
+      className="relative overflow-hidden bg-[#050505] pt-0 pb-24 md:pt-0 md:pb-32 transition-colors duration-300"
     >
       {/* Background elegant moving ambient glows */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

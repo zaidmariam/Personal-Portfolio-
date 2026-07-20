@@ -290,7 +290,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-white dark:bg-[#050505] py-16 md:py-20 transition-colors duration-300"
+      className="relative overflow-hidden bg-[#050505] py-16 md:py-20 transition-colors duration-300"
     >
       {/* Background Grid */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.06]

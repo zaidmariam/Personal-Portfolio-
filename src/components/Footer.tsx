@@ -28,7 +28,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-white dark:bg-[#050505] border-t border-neutral-200/40 dark:border-white/[0.04] pt-20 pb-10 transition-colors duration-300">
+    <footer className="relative overflow-hidden bg-[#050505] border-t border-neutral-200/40 dark:border-white/[0.04] pt-20 pb-10 transition-colors duration-300">
 
       {/* Animated gradient top border line */}
       <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-neutral-200/10 dark:bg-white/[0.02] overflow-hidden">

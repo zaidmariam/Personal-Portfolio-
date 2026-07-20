@@ -285,10 +285,10 @@ export default function About() {
 
   return (
     <section
-      id="about"
-      ref={containerRef}
-      className="relative min-h-screen pt-4 sm:pt-8 md:pt-16 pb-20 md:pb-32 overflow-hidden bg-white dark:bg-[#050505] transition-colors duration-300 select-none"
-    >
+  id="about"
+  ref={containerRef}
+  className="relative min-h-screen pt-4 sm:pt-8 md:pt-16 pb-20 md:pb-32 overflow-hidden bg-[#050505] transition-colors duration-300 select-none"
+>
       {/* 3D Grid Overlay */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06] [background-image:linear-gradient(#ffffff15_1px,transparent_1px),linear-gradient(90deg,#ffffff15_1px,transparent_1px)] [background-size:60px_60px] [transform:perspective(800px)_rotateX(60deg)] [transform-origin:top] pointer-events-none" />
 
