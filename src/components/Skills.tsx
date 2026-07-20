@@ -151,7 +151,7 @@ export default function Skills() {
       glowColor: "#a855f7",
       gradientFrom: "from-purple-500/20",
       gradientTo: "to-pink-500/20",
-      accentText: "text-purple-600 dark:text-purple-400",
+      accentText: " text-purple-400",
       glowShadow: "shadow-[0_0_15px_rgba(168,85,247,0.35)]",
       gridSpan: "md:col-span-5",
       techs: [
@@ -210,7 +210,7 @@ export default function Skills() {
             scale: [1, 1.15, 0.9, 1],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute left-[10%] top-[15%] h-[600px] w-[600px] rounded-full bg-purple-400/10 dark:bg-purple-900/10 blur-[130px] opacity-75"
+          className="absolute left-[10%] top-[15%] h-[600px] w-[600px] rounded-full bg-purple-500/10 blur-[130px] opacity-75"
         />
 
         {/* Soft Blue Glow */}
@@ -254,7 +254,7 @@ export default function Skills() {
           </motion.div>
 
           {/* Title with Letter Reveal */}
-          <h2 className="mt-6 text-4xl font-extrabold text-neutral-900 dark:text-white sm:text-5xl md:text-6xl tracking-tight leading-tight transition-colors duration-300">
+          <h2 className="mt-6 text-4xl font-extrabold text-white sm:text-5xl md:text-6xl tracking-tight leading-tight transition-colors duration-300">
             <LetterReveal text={t("titlePart1")} delay={0.05} />
             <span className="bg-gradient-to-r from-purple-500 via-indigo-500 to-cyan-500 dark:from-purple-400 dark:via-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent inline-block py-2">
               <LetterReveal text={t("titlePart2")} delay={0.3} />
@@ -267,7 +267,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="mx-auto mt-6 max-w-2xl text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed font-light transition-colors duration-300"
+            className="mx-auto mt-6 max-w-2xl text-base md:text-lg text-neutral-400 leading-relaxed font-light transition-colors duration-300"
           >
             {t("description")}
           </motion.p>
@@ -377,7 +377,7 @@ function SkillCard({ category, isLight }: { category: SkillCategory; isLight: bo
       {/* Card Content Container */}
       <div
         style={{ transformStyle: "preserve-3d" }}
-        className="h-full rounded-[27px] md:rounded-[31px] border border-neutral-200/80 dark:border-white/[0.06] bg-white/70 dark:bg-[#050505]/75 backdrop-blur-2xl p-8 lg:p-10 flex flex-col justify-between transition-colors duration-500 group-hover:border-neutral-300 dark:group-hover:border-white/[0.12] group-hover:bg-white/90 dark:group-hover:bg-[#070707]/85 relative overflow-hidden"
+        className="h-full rounded-[27px] md:rounded-[31px] border border-white/[0.06] bg-[#0a0a0a]/80 backdrop-blur-2xl p-8 lg:p-10 flex flex-col justify-between transition-all duration-500 group-hover:border-white/[0.12] group-hover:bg-[#101010]/90 relative overflow-hidden"
       >
         {/* Soft radial glow in the top right corner */}
         <div className={`absolute -right-20 -top-20 w-48 h-48 rounded-full bg-gradient-to-br ${category.gradientFrom} to-transparent blur-3xl opacity-25 group-hover:opacity-45 transition-opacity duration-500 pointer-events-none -z-10`} />
@@ -395,7 +395,7 @@ function SkillCard({ category, isLight }: { category: SkillCategory; isLight: bo
           {/* Title */}
           <motion.h3
             style={{ translateZ: translateZTitle }}
-            className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mt-2 tracking-tight transition-colors duration-300"
+            className="text-2xl md:text-3xl font-bold text-white mt-2 tracking-tight"
           >
             {category.title}
           </motion.h3>
@@ -403,7 +403,7 @@ function SkillCard({ category, isLight }: { category: SkillCategory; isLight: bo
           {/* Description */}
           <motion.p
             style={{ translateZ: translateZDesc }}
-            className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mt-3 leading-relaxed max-w-xl transition-colors duration-300"
+            className="text-neutral-400 text-sm md:text-base mt-3 leading-relaxed max-w-xl"
           >
             {category.description}
           </motion.p>
@@ -422,9 +422,9 @@ function SkillCard({ category, isLight }: { category: SkillCategory; isLight: bo
         {/* Footer */}
         <motion.div
           style={{ translateZ: translateZFooter }}
-          className="border-t border-neutral-200/80 dark:border-white/[0.06] pt-6 mt-8 flex items-center justify-between transition-colors duration-300"
+          className="border-t border-white/[0.06] pt-6 mt-8 flex items-center justify-between transition-colors duration-300"
         >
-          <span className="text-xs uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-450 font-medium transition-colors duration-300">
+          <span className="text-xs uppercase tracking-[0.2em] text-neutral-500  font-medium transition-colors duration-300">
             {category.techs.length} {t("technologies")}
           </span>
 
@@ -482,7 +482,7 @@ function TechBadge({ tech, isCardHovered, isLight }: TechBadgeProps) {
           backgroundColor: isLight ? "rgba(0, 0, 0, 0.01)" : "rgba(255, 255, 255, 0.02)"
         }}
         transition={{ type: "spring", stiffness: 220, damping: 18 }}
-        className="flex items-center gap-3 rounded-xl border border-neutral-200/80 dark:border-white/[0.04] p-3 h-full select-none transition-colors duration-300"
+        className="flex items-center gap-3 rounded-xl border border-white/[0.06] p-3 h-full select-none transition-colors duration-300"
       >
         {/* Slow swing animation */}
         <motion.div
@@ -514,7 +514,7 @@ function TechBadge({ tech, isCardHovered, isLight }: TechBadgeProps) {
           </motion.div>
         </motion.div>
 
-        <span className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 leading-tight whitespace-normal transition-colors duration-300">
+        <span className="text-xs font-semibold text-neutral-300 leading-tight whitespace-normal transition-colors duration-300">
           {tech.name}
         </span>
       </motion.div>
