@@ -77,8 +77,6 @@ export default function About() {
     setMounted(true);
   }, []);
 
-  const isLight = false;
-
   // =========================
   // CODE TYPEWRITER DATA
   // =========================
@@ -257,19 +255,19 @@ export default function About() {
   const getTokenClass = (type: string) => {
     switch (type) {
       case "keyword":
-        return "text-pink-500 dark:text-pink-400 font-semibold";
+        return "text-pink-400 font-semibold";
       case "property":
-        return "text-blue-600 dark:text-blue-400";
+        return "text-blue-400";
       case "string":
-        return "text-emerald-600 dark:text-emerald-400";
+        return "text-emerald-400";
       case "operator":
-        return "text-purple-600 dark:text-purple-400";
+        return "text-purple-400";
       case "bracket":
-        return "text-amber-600 dark:text-amber-400";
+        return "text-amber-400";
       case "indent":
         return "";
       default:
-        return "text-neutral-700 dark:text-neutral-300";
+        return "text-neutral-300";
     }
   };
 
@@ -285,16 +283,16 @@ export default function About() {
 
   return (
     <section
-  id="about"
-  ref={containerRef}
-  className="relative min-h-screen pt-4 sm:pt-8 md:pt-16 pb-20 md:pb-32 overflow-hidden bg-[#050505] transition-colors duration-300 select-none"
->
+      id="about"
+      ref={containerRef}
+      className="relative min-h-screen pt-4 sm:pt-8 md:pt-16 pb-20 md:pb-32 overflow-hidden bg-[#050505] select-none"
+    >
       {/* 3D Grid Overlay */}
-      <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06] [background-image:linear-gradient(#ffffff15_1px,transparent_1px),linear-gradient(90deg,#ffffff15_1px,transparent_1px)] [background-size:60px_60px] [transform:perspective(800px)_rotateX(60deg)] [transform-origin:top] pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(#ffffff15_1px,transparent_1px),linear-gradient(90deg,#ffffff15_1px,transparent_1px)] [background-size:60px_60px] [transform:perspective(800px)_rotateX(60deg)] [transform-origin:top] pointer-events-none" />
 
       {/* Background Gradient Orbs */}
-      <div className="absolute top-1/4 left-10 w-[500px] h-[500px] rounded-full bg-violet-500/10 dark:bg-violet-600/10 blur-[150px] pointer-events-none animate-pulse" />
-      <div className="absolute bottom-1/4 right-10 w-[550px] h-[550px] rounded-full bg-fuchsia-500/10 dark:bg-fuchsia-600/10 blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/4 left-10 w-[500px] h-[500px] rounded-full bg-violet-600/10 blur-[150px] pointer-events-none animate-pulse" />
+      <div className="absolute bottom-1/4 right-10 w-[550px] h-[550px] rounded-full bg-fuchsia-600/10 blur-[150px] pointer-events-none" />
 
       {/* Floating Sparkle Particles */}
       <div className="absolute inset-0 pointer-events-none">
@@ -313,7 +311,7 @@ export default function About() {
                 delay: i * 0.4,
                 ease: "easeInOut"
               }}
-              className="absolute rounded-full bg-violet-400/30 dark:bg-violet-400/40 blur-[2px]"
+              className="absolute rounded-full bg-violet-400/40 blur-[2px]"
               style={{
                 width: `${4 + (i % 4)}px`,
                 height: `${4 + (i % 4)}px`,
@@ -342,7 +340,7 @@ export default function About() {
             {/* Tag Badge */}
             <motion.div
               variants={revealVariants}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/20 bg-violet-500/5 text-violet-600 dark:text-violet-400 text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(139,92,246,0.1)]"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/20 bg-violet-500/5 text-violet-400 text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(139,92,246,0.1)]"
             >
               <Sparkles size={13} className="animate-pulse" />
               <span>{t("badge")}</span>
@@ -351,7 +349,7 @@ export default function About() {
             {/* Heading */}
             <motion.h2
               variants={revealVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.08] text-neutral-900 dark:text-white"
+              className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.08] text-white"
             >
               {t("titlePart1")}
               <span className="bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_2px_15px_rgba(139,92,246,0.15)]">
@@ -362,7 +360,7 @@ export default function About() {
             {/* Description */}
             <motion.p
               variants={revealVariants}
-              className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg leading-relaxed font-medium"
+              className="text-neutral-400 text-base md:text-lg leading-relaxed font-medium"
             >
               {t("description")}
             </motion.p>
@@ -370,44 +368,44 @@ export default function About() {
             {/* Numerical Statistics */}
             <motion.div
               variants={revealVariants}
-              className="grid grid-cols-2 gap-4 sm:gap-6 pt-6 border-t border-neutral-200 dark:border-white/5"
+              className="grid grid-cols-2 gap-4 sm:gap-6 pt-6 border-t border-white/5"
             >
               {/* Projects */}
               <div className="space-y-1">
-                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-violet-600 dark:text-violet-400">
+                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-violet-400">
                   <Counter value={3} suffix="+" />
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-500">
+                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500">
                   {t("stats.projects")}
                 </p>
               </div>
 
               {/* Technologies */}
               <div className="space-y-1">
-                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-purple-600 dark:text-purple-400">
+                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-purple-400">
                   <Counter value={10} suffix="+" />
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-500">
+                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500">
                   {t("stats.tech")}
                 </p>
               </div>
 
               {/* Passion */}
               <div className="space-y-1">
-                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-fuchsia-600 dark:text-fuchsia-400">
+                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-fuchsia-400">
                   <Counter value={100} suffix="%" />
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-500">
+                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500">
                   {t("stats.passion")}
                 </p>
               </div>
 
               {/* Years of Study */}
               <div className="space-y-1">
-                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-pink-600 dark:text-pink-400">
+                <div className="flex items-center gap-0.5 text-2xl sm:text-3xl md:text-4xl font-extrabold text-pink-400">
                   <Counter value={2} suffix="+" />
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-500">
+                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-neutral-500">
                   {t("stats.study")}
                 </p>
               </div>
@@ -430,26 +428,22 @@ export default function About() {
               transition={{ type: "spring", stiffness: 80, damping: 18 }}
               style={{ rotateX, rotateY, transformStyle: "preserve-3d", transformPerspective: 1200 }}
               whileHover={{
-                boxShadow: isLight
-                  ? "0 30px 60px rgba(139, 92, 246, 0.1), 0 0 25px rgba(139, 92, 246, 0.04)"
-                  : "0 30px 60px rgba(139, 92, 246, 0.22), 0 0 30px rgba(139, 92, 246, 0.08)",
-                borderColor: isLight
-                  ? "rgba(139, 92, 246, 0.15)"
-                  : "rgba(139, 92, 246, 0.12)"
+                boxShadow: "0 30px 60px rgba(139, 92, 246, 0.22), 0 0 30px rgba(139, 92, 246, 0.08)",
+                borderColor: "rgba(139, 92, 246, 0.12)"
               }}
-              className="w-full max-w-lg relative bg-white/70 dark:bg-neutral-950/40 backdrop-blur-[24px] border border-neutral-200/50 dark:border-white/5 shadow-2xl rounded-2xl overflow-hidden transition-colors duration-300 z-10"
+              className="w-full max-w-lg relative bg-[#0a0a0a]/80 backdrop-blur-2xl border border-white/[0.06] shadow-2xl rounded-2xl overflow-hidden z-10"
             >
               {/* Window Header */}
               <div
                 style={{ transform: "translateZ(20px)", transformStyle: "preserve-3d" }}
-                className="flex items-center justify-between px-4 py-3 bg-neutral-200/30 dark:bg-white/5 border-b border-neutral-200/40 dark:border-white/5"
+                className="flex items-center justify-between px-4 py-3 bg-white/5 border-b border-white/5"
               >
                 <div className="flex items-center gap-2">
                   <div className="w-3.5 h-3.5 rounded-full bg-[#ff5f56] border border-black/5" />
                   <div className="w-3.5 h-3.5 rounded-full bg-[#ffbd2e] border border-black/5" />
                   <div className="w-3.5 h-3.5 rounded-full bg-[#27c93f] border border-black/5" />
                 </div>
-                <div className="text-xs font-bold text-neutral-500 dark:text-neutral-500 font-mono tracking-wide">
+                <div className="text-xs font-bold text-neutral-500 font-mono tracking-wide">
                   developer.ts
                 </div>
                 <div className="w-12" />
@@ -464,7 +458,7 @@ export default function About() {
                   return (
                     <div key={lineIdx} className="flex items-start group">
                       {/* Line Number */}
-                      <span className="text-neutral-300 dark:text-neutral-700 select-none text-right w-6 pr-4 border-r border-neutral-200 dark:border-neutral-800/50 mr-4 font-mono">
+                      <span className="text-neutral-700 select-none text-right w-6 pr-4 border-r border-neutral-800/50 mr-4 font-mono">
                         {lineIdx + 1}
                       </span>
                       {/* Line Code */}
@@ -491,7 +485,7 @@ export default function About() {
                                 <motion.span
                                   animate={{ opacity: [1, 0, 1] }}
                                   transition={{ repeat: Infinity, duration: 0.8 }}
-                                  className="inline-block w-1.5 h-3.5 bg-violet-500 dark:bg-violet-400"
+                                  className="inline-block w-1.5 h-3.5 bg-violet-400"
                                 />
                               </span>
                             );
@@ -510,7 +504,6 @@ export default function About() {
                 FLOATING GLASS BADGES (ROUND THE DEVS CARD IN 3D SPACE)
                 ======================================================== */}
             {/* Badge 1: Full Stack Developer (Top Left) */}
-            {/* Badge 1: Full Stack Developer (Top Left) */}
             <motion.div
               style={{
                 rotateX,
@@ -521,7 +514,7 @@ export default function About() {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ scale: 1.05, translateZ: 85 }}
-              className="absolute -top-6 -left-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-neutral-200/50 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg text-neutral-800 dark:text-white pointer-events-auto"
+              className="absolute -top-6 -left-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-white/10 bg-black/80 backdrop-blur-md shadow-lg text-white pointer-events-auto"
             >
               <div className="p-1.5 rounded-lg bg-violet-500/10 text-violet-500">
                 <Laptop size={15} />
@@ -540,7 +533,7 @@ export default function About() {
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
               whileHover={{ scale: 1.05, translateZ: 105 }}
-              className="absolute -top-10 -right-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-neutral-200/50 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg text-neutral-800 dark:text-white pointer-events-auto"
+              className="absolute -top-10 -right-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-white/10 bg-black/80 backdrop-blur-md shadow-lg text-white pointer-events-auto"
             >
               <div className="p-1.5 rounded-lg bg-purple-500/10 text-purple-500">
                 <Code2 size={15} />
@@ -559,7 +552,7 @@ export default function About() {
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
               whileHover={{ scale: 1.05, translateZ: 75 }}
-              className="absolute -bottom-8 -left-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-neutral-200/50 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg text-neutral-800 dark:text-white pointer-events-auto"
+              className="absolute -bottom-8 -left-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-white/10 bg-black/80 backdrop-blur-md shadow-lg text-white pointer-events-auto"
             >
               <div className="p-1.5 rounded-lg bg-fuchsia-500/10 text-fuchsia-500">
                 <Zap size={15} />
@@ -578,7 +571,7 @@ export default function About() {
               animate={{ y: [0, -11, 0] }}
               transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
               whileHover={{ scale: 1.05, translateZ: 95 }}
-              className="absolute -bottom-10 -right-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-neutral-200/50 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg text-neutral-800 dark:text-white pointer-events-auto"
+              className="absolute -bottom-10 -right-6 z-20 flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-white/10 bg-black/80 backdrop-blur-md shadow-lg text-white pointer-events-auto"
             >
               <div className="p-1.5 rounded-lg bg-pink-500/10 text-pink-500">
                 <Brain size={15} />
@@ -599,17 +592,17 @@ export default function About() {
             transition={{ type: "spring", stiffness: 80, damping: 18 }}
             className="text-center space-y-4 max-w-xl mx-auto"
           >
-            <h3 className="text-3xl md:text-4xl font-extrabold text-neutral-900 dark:text-white tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
               {t("journey.title")}
             </h3>
-            <p className="text-neutral-500 dark:text-neutral-500 text-xs font-bold tracking-widest uppercase">
+            <p className="text-neutral-500 text-xs font-bold tracking-widest uppercase">
               {t("journey.subtitle")}
             </p>
           </motion.div>
 
           <div className="relative max-w-4xl mx-auto py-12">
             {/* Dynamic Scroll-Linked Timeline Progress Line */}
-            <div className="absolute left-[23px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-neutral-200 dark:bg-neutral-850" />
+            <div className="absolute left-[23px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-white/5" />
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               whileInView={{ opacity: 1, height: "100%" }}
@@ -636,7 +629,7 @@ export default function About() {
                         whileInView={{ scale: 1, opacity: 1 }}
                         viewport={{ once: false, amount: 0.35 }}
                         transition={{ type: "spring", stiffness: 120, damping: 15, delay: index * 0.05 }}
-                        className={`w-6 h-6 rounded-full border-[3px] border-white dark:border-[#050505] bg-gradient-to-tr ${entry.gradient} shadow-lg`}
+                        className={`w-6 h-6 rounded-full border-[3px] border-[#050505] bg-gradient-to-tr ${entry.gradient} shadow-lg`}
                       />
                     </div>
 
@@ -667,7 +660,7 @@ export default function About() {
                             delay: index * 0.1
                           }}
                           whileHover={{ y: -3 }}
-                          className="p-7 rounded-3xl border border-neutral-200/40 dark:border-white/5 bg-white/40 dark:bg-[#080808]/40 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:border-violet-500/30 dark:hover:border-violet-500/20 hover:shadow-[0_20px_50px_rgba(139,92,246,0.1)] dark:hover:shadow-[0_20px_50px_rgba(139,92,246,0.15)] transition-all duration-500"
+                          className="p-7 rounded-3xl border border-white/[0.06] bg-[#0a0a0a]/80 backdrop-blur-2xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:border-violet-500/20 hover:shadow-[0_20px_50px_rgba(139,92,246,0.15)] transition-all duration-500 group"
                         >
                           <div
                             className={`flex items-center gap-3 mb-2 md:justify-start ${isEven ? "md:flex-row-reverse" : ""
@@ -676,15 +669,15 @@ export default function About() {
                             <div className={`p-2 rounded-xl bg-gradient-to-tr ${entry.gradient} text-white shadow-md`}>
                               <IconComponent size={16} />
                             </div>
-                            <span className="text-lg font-black tracking-tight text-neutral-900 dark:text-white">
+                            <span className="text-lg font-black tracking-tight text-white">
                               {entry.year}
                             </span>
                           </div>
 
-                          <h4 className="text-base font-bold text-neutral-800 dark:text-neutral-200 mb-2">
+                          <h4 className="text-base font-bold text-neutral-200 mb-2">
                             {entry.title}
                           </h4>
-                          <p className="text-xs md:text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed font-medium">
+                          <p className="text-xs md:text-sm text-neutral-400 leading-relaxed font-medium">
                             {entry.desc}
                           </p>
                         </motion.div>

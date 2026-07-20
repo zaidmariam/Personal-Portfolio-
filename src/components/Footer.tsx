@@ -28,10 +28,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-[#050505] border-t border-neutral-200/40 dark:border-white/[0.04] pt-20 pb-10 transition-colors duration-300">
+    <footer className="relative overflow-hidden bg-[#050505] border-t border-white/[0.06] pt-20 pb-10">
 
       {/* Animated gradient top border line */}
-      <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-neutral-200/10 dark:bg-white/[0.02] overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-white/[0.02] overflow-hidden">
         <motion.div
           animate={{
             left: ["-100%", "100%"]
@@ -46,7 +46,7 @@ export default function Footer() {
       </div>
 
       {/* Background Perspective Grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.02] dark:opacity-[0.04]
+      <div className="absolute inset-0 pointer-events-none opacity-[0.04]
       [background-image:linear-gradient(#ffffff15_1px,transparent_1px),linear-gradient(90deg,#ffffff15_1px,transparent_1px)]
       [background-size:60px_60px]
       [transform:perspective(800px)_rotateX(60deg)]
@@ -73,7 +73,7 @@ export default function Footer() {
                 delay: i * 0.5,
                 ease: "easeInOut"
               }}
-              className="absolute rounded-full bg-violet-400/20 dark:bg-violet-400/30 blur-[1px]"
+              className="absolute rounded-full bg-violet-400/30 blur-[1px]"
               style={{
                 width: `${2 + (i % 3)}px`,
                 height: `${2 + (i % 3)}px`,
@@ -92,7 +92,7 @@ export default function Footer() {
           {/* COLUMN 1: Brand details */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-2">
-              <h3 className="text-2xl font-black tracking-widest text-neutral-900 dark:text-white">
+              <h3 className="text-2xl font-black tracking-widest text-white">
                 {t("brand")}
               </h3>
               <p className="text-sm font-bold uppercase tracking-widest bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
@@ -100,18 +100,18 @@ export default function Footer() {
               </p>
             </div>
 
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-sm leading-relaxed font-light">
+            <p className="text-sm text-neutral-400 max-w-sm leading-relaxed font-light">
               {t("description")}
             </p>
 
-            <div className="flex items-center gap-2 text-xs text-neutral-500 dark:text-neutral-400 font-light">
+            <div className="flex items-center gap-2 text-xs text-neutral-400 font-light">
               <span>{t("location")}</span>
             </div>
           </div>
 
           {/* COLUMN 2: Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-neutral-900 dark:text-white">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-white">
               {t("linksTitle")}
             </h4>
             <ul className="space-y-2.5">
@@ -126,7 +126,7 @@ export default function Footer() {
                   <a
                     href={`#${link.id}`}
                     onClick={(e) => handleScrollTo(e, link.id)}
-                    className="text-sm font-light text-neutral-500 dark:text-neutral-400 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 flex items-center group"
+                    className="text-sm font-light text-neutral-400 hover:text-violet-400 transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
                     {link.name}
@@ -138,27 +138,27 @@ export default function Footer() {
 
           {/* COLUMN 3: Social Connections */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-neutral-900 dark:text-white">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-white">
               {t("connectTitle")}
             </h4>
             <div className="flex flex-wrap gap-4">
               {[
-  {
-    icon: <FaGithub size={18} />,
-    href: "https://github.com/zaidmariam",
-    label: "GitHub"
-  },
-  {
-    icon: <Mail size={18} />,
-    href: "mailto:zaidmaryam460@gmail.com",
-    label: "Email"
-  },
-  {
-    icon: <Phone size={18} />,
-    href: "tel:+212642-020790",
-    label: "Phone"
-  }
-].map((item, i) => (
+                {
+                  icon: <FaGithub size={18} />,
+                  href: "https://github.com/zaidmariam",
+                  label: "GitHub"
+                },
+                {
+                  icon: <Mail size={18} />,
+                  href: "mailto:zaidmaryam460@gmail.com",
+                  label: "Email"
+                },
+                {
+                  icon: <Phone size={18} />,
+                  href: "tel:+212642-020790",
+                  label: "Phone"
+                }
+              ].map((item, i) => (
                 <motion.a
                   key={i}
                   href={item.href}
@@ -170,7 +170,7 @@ export default function Footer() {
                     borderColor: "rgba(139, 92, 246, 0.4)",
                     boxShadow: "0 0 20px rgba(139, 92, 246, 0.15)",
                   }}
-                  className="h-11 w-11 rounded-2xl border border-neutral-200 dark:border-white/5 bg-white dark:bg-white/[0.03] flex items-center justify-center text-neutral-600 dark:text-neutral-400 hover:text-violet-500 dark:hover:text-violet-400 transition-all duration-300"
+                  className="h-11 w-11 rounded-2xl border border-white/[0.06] bg-white/[0.03] flex items-center justify-center text-neutral-400 hover:text-violet-400 transition-all duration-300"
                   aria-label={item.label}
                 >
                   {item.icon}
@@ -182,10 +182,10 @@ export default function Footer() {
         </div>
 
         {/* Divider & Credits */}
-        <div className="mt-16 pt-8 border-t border-neutral-200/20 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-sm text-neutral-500 dark:text-neutral-400 text-center md:text-left">
+        <div className="mt-16 pt-8 border-t border-white/[0.06] flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-sm text-neutral-400 text-center md:text-left">
             <p>{t("copyright")}</p>
-            <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
+            <p className="mt-1 text-xs text-neutral-500">
               {t("credits")}
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function Footer() {
             onClick={scrollToTop}
             whileHover={{ y: -4, scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="group flex items-center gap-2 px-4 py-2.5 rounded-full border border-neutral-200 dark:border-white/5 bg-white dark:bg-white/[0.03] hover:bg-violet-500/10 text-neutral-600 dark:text-neutral-300 hover:text-violet-500 hover:border-violet-500/30 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] transition-all duration-300 text-sm font-semibold cursor-pointer"
+            className="group flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/[0.06] bg-white/[0.03] hover:bg-violet-500/10 text-neutral-300 hover:text-violet-400 hover:border-violet-500/30 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] transition-all duration-300 text-sm font-semibold cursor-pointer"
           >
             <span>{t("backToTop")}</span>
             <ArrowUp size={16} className="transition-transform duration-300 group-hover:-translate-y-1" />
