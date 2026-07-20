@@ -263,7 +263,7 @@ export default function Hero() {
 
             {/* DOWNLOAD CV */}
             <motion.a
-              href="/MARIAM ZAID CV.pdf"
+              href="/cv mariam zaid.pdf"
               download
               whileHover={{
                 scale: 1.05,
