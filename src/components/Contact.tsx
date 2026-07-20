@@ -455,7 +455,6 @@ export default function Contact() {
           </TiltCard>
 
           {/* RIGHT */}
-          {/* CHANGE: Added flex flex-col h-full to right card contents */}
           <TiltCard className="w-full max-w-xl mx-auto p-8 flex flex-col justify-center">
             <AnimatePresence mode="wait">
               {!isSubmitted ? (
