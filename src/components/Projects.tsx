@@ -628,7 +628,7 @@ export function ProjectButtons({ githubUrl, isCardHovered, t }: ProjectButtonsPr
         boxShadow: "0 0 20px rgba(255, 255, 255, 0.08)",
       }}
       transition={{ type: "spring", stiffness: 400, damping: 15 }}
-      className="flex items-center justify-center gap-2 w-full text-xs md:text-sm font-semibold rounded-xl border border-white/[0.08] bg-white/[0.02] py-3.5 text-white transition-colors duration-300 select-none group/btn cursor-pointer"
+      className="flex items-center justify-center gap-2 w-full text-xs md:text-sm font-semibold rounded-xl border border-white/[0.08] bg-white/[0.02] py-3.5 text-white transition-colors duration-300 select-none group/btn cursor-pointer max-md:!opacity-100 max-md:!transform-none"
     >
       <FaGithub className="w-4 h-4 text-neutral-400 group-hover/btn:text-white group-hover/btn:scale-110 transition-transform duration-300 ease-out" />
       <span>{t("github")}</span>
